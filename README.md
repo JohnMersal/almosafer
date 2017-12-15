@@ -7,27 +7,27 @@ Please feel free to ask me any questions.
 
 # File structure
 
-index.html
-css
-|----Responsive.scss / css (unused at the moment)
-|----variable.scss (for all font variables).
-|----bootstrap.scss (Main framework css file)
-|----screen.scss / css (custom style for the design)
-|---- fonts
-|-------|----mosafer.eot/svg/ttf/woff (custom icon font made by Icomoon.io)
-images
-images-source (source folder with unoptimized images)
-js
-|----bootstrap.bundle.min.js (main framework js)
-|----datepicker.min.js (vendor for datepicker)
-|----html5shiv.js (pollyfill)
-|----index.js (custom js for the page)
-|----jQuery.min.js
-|----owl.carousel.min.js (slider vendor)
-|----scrollmagic.min.js (unused for animation)
-|----tether.js
-package.json (node modules needed for the application).
-gulpfile.js
+* index.html
+* css
+	* |----Responsive.scss / css (unused at the moment)
+	* |----variable.scss (for all font variables).
+	* |----bootstrap.scss (Main framework css file)
+	* |----screen.scss / css (custom style for the design)
+	* |---- fonts
+	* |-------|----mosafer.eot/svg/ttf/woff (custom icon font made by Icomoon.io)
+* images
+* images-source (source folder with unoptimized images)
+* js
+	* |----bootstrap.bundle.min.js (main framework js)
+	* |----datepicker.min.js (vendor for datepicker)
+	* |----html5shiv.js (pollyfill)
+	* |----index.js (custom js for the page)
+	* |----jQuery.min.js
+	* |----owl.carousel.min.js (slider vendor)
+	* |----scrollmagic.min.js (unused for animation)
+	* |----tether.js
+* package.json (node modules needed for the application).
+* gulpfile.js
 
 
 #Gulp
