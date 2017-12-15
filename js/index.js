@@ -73,8 +73,10 @@ $(document).ready(function() {
 		    480 : {
 		    },
 		    // breakpoint from 768 up
-		    768 : {
+		    993 : {
+		    	margin: -158,
 		    }
+
 		},
 	});
 	// Owl Option to set SECOND slide in action

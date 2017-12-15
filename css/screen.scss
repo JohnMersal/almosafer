@@ -200,6 +200,7 @@ body{
 .offers{
 	.nav{
 		border-bottom:1px solid #dddddd;
+		width: 100%;
 		.offers-tab{
 			text-decoration: none;
 			@include fontSize(24px);
@@ -831,427 +832,18 @@ body{
 }
 
 @include media-breakpoint-down(xs) { 
-	.container{
-		padding-right: 30px;
-    	padding-left: 30px;
-	}
-	.hero-block{
-	  	height: auto;
-	    padding-top: 90px;
-	    min-height: auto;
-	    padding-bottom: 60px;
-	  	h1{
-	  		@include fontSize(20px);
-	  	}
-	  	h5{
-		    margin-top: 8px;
-	  		@include fontSize(16px);
-	  	}
-	  	.book-trip{
-	  		@include fontSize(12px);
-	  		margin-top:10px;
-	  	}
-	  	.sub-logo{
-	  		position: relative;
-	  		bottom:0;
-	  		margin-top:20px;
-	  		width:50%;
-	  		img{
-	  			max-width: 100%;
-	  		}
-	  	}
-	}
-	.content{
-	  	#content-top{
-	  		margin-bottom:20px;
-	  	}
-	}
-	.section-title{
-		padding: 0 0 30px 0;
-		@include fontSize(18px);
-		letter-spacing: -0.5px;
-		&:after{
-			height:5px;
-			width:40%;
-		}
-	}
-	.offers{
-		.nav{
-			width:100%;
-			.offers-tab{
-				@include fontSize(12px);
-				color: $purple;
-			}
-		}
-	}
-	.slider-container{
-		position: relative;
-		margin-bottom:50px;
-		.owl-nav{
-			@include fontSize(40px);
-		    .owl-prev{
-				margin-left:0
-		    }
-		    .owl-next{
-				margin-right:0;
-		    }
-		}
-		.overflow-hide{
-			width:85%;
-			margin:auto;
-			.owl-carousel{
-				width:250px;
-				margin-left:auto;
-				margin-right:auto;
-				.owl-item{
-					&.shadow{
-						box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.4);
-					}
-					&.active{
-						box-shadow: 0 2px 50px 0 rgba(0, 0, 0, 0.4) !important;
-					}
-				}
-				.panel{
-					width: 100%;
-		  			height: 400px;
-					.panel-title{
-						padding:15px;
-						h1{
-							@include fontSize(20px);
-						}
-						h5{
-							@include fontSize(16px);
-							margin-bottom:40px;
-						}
-						.price{
-							@include fontSize(12px);
-						}
-						.go-offer{
-							width:40px;
-						}
-					}
-				}
-			}
-		}
-	}
-	.search-flight{
-		.section-title{
-			margin-bottom:25px;
-		}
-		.search-container{
-			.nav{
-				float:left;
-				width:100%;
-				margin-bottom:10px;
-				.flights-direction{
-					padding:0.5rem 1.5rem;
-					margin-right:10px;
-				}
-			}
-		}
-		.flight-fields{
-			margin-top:10px;
-		}
-	}
-	.form-section{
-		margin-right:0px;
-		margin-bottom:10px;
-		flex:1;
-		&.double{
-			flex:1;
-		}
-	}
-	.input-date-picker-from{
-		&:first-child.r-b{
-			border-radius:5px 5px 0 0 ;
-			overflow: hidden;
-		}
-		&:last-child{
-			border-radius: 0 0 5px 5px;
-			overflow: hidden;
-		}
-		&.return-date{
-			margin-left:0px;
-			margin-top:1px;
-			.place-holder2{
-				i{
-					@include fontSize(20px);
-				}
-			}
-		}
-		&:before{
-			top:50%;
-			-webkit-transform: translateY(-50%);
-			   -moz-transform: translateY(-50%);
-			    -ms-transform: translateY(-50%);
-			     -o-transform: translateY(-50%);
-			        transform: translateY(-50%);
-		}
-	}
-	.search{
-		button{
-			float:left;
-			width:100%;
-			margin-top:10px;
-			padding:10px;
-			i{
-				display: inline-block;
-				vertical-align: middle;
-				zoom: 1;
-				*display: inline;
-				margin-bottom:0px;
-				margin-right:10px;
-			}
-		}
-	}
-	.fun-things-container{
-		.section-title{
-			margin-top: 40px;
-		}
-	}
-	.fun-things{
-		margin-top:-70px;
-		.ft-single{
-			padding:0;
-		}
-		.ft-single{
-			img{
-				max-width:100%;
-			}
-			&:first-child{
-				&:before{
-					display:block;
-				}
-			}
-			&:before{
-				display:none;
-			}
-			.fun-things-text{
-				padding:10px 30px;
-				.number{
-					@include fontSize(120px);
-					bottom: 40px;
-	    			left: 30px;
-				}
-				p{
-					@include fontSize(26px);
-				}
-			}
-		}
-	}
-	.hiw{
-		padding-top:50px;
-		.steps{
-			margin-top:20px;
-			margin-bottom:50px;
-			.step{
-				padding-right:20px;
-				.section-title{
-					color:$purple;
-					@include fontSize(20px);
-					padding: 10px 0px;
-					&:after{
-						width:30%;
-						height:3px;
-					}
-				}
-			}
-		}
-	}
-	.cards-container{
-		padding:50px 0;
-		.cards{
-			text-align: center;
-			margin-top:20px;
-			.credit-card{
-				width:50%;
-				img{
-					width: 100%;
-	    			margin-left: 0%;
-				}
-				p{
-					position: relative;
-					bottom:0;
-					left:0;
-					margin-bottom:0;
-				}
-			}
-		}
-	}
-	.terms{
-		.section-title{
-			margin-bottom:50px;
-		}
-		float:left;
-		width:100%;
-		padding:100px 0;
-		@include fontSize(15px);
-		line-height: 1.9;
-		letter-spacing: -0.5px;
-		color: #777777;
-		counter-reset: mycounter;
-		ol{position: relative;}
-		ol li { counter-increment: mycounter; margin-bottom: 10px;}
-	    ol li { counter-increment: mycounter; list-style-type: none; }
-	    ol li:before { content: counter(mycounter) ". ";     position: absolute;left: 0;}
-	}
+
 }
 @include media-breakpoint-down(sm) { 
-	.container{
-		padding-right: 30px;
-    	padding-left: 30px;
-	}
-	.hero-block{
-	  	height: auto;
-	    padding-top: 90px;
-	    min-height: auto;
-	    padding-bottom: 60px;
-	  	h1{
-	  		@include fontSize(20px);
-	  	}
-	  	h5{
-		    margin-top: 8px;
-	  		@include fontSize(16px);
-	  	}
-	  	.book-trip{
-	  		@include fontSize(12px);
-	  		margin-top:10px;
-	  	}
-	  	.sub-logo{
-	  		position: relative;
-	  		bottom:0;
-	  		margin-top:20px;
-	  		width:50%;
-	  		img{
-	  			max-width: 100%;
-	  		}
-	  	}
-	}
-	.content{
-	  	#content-top{
-	  		margin-bottom:20px;
-	  	}
-	}
-	.section-title{
-		padding: 0 0 30px 0;
-		@include fontSize(18px);
-		letter-spacing: -0.5px;
-		&:after{
-			height:5px;
-			width:40%;
-		}
-	}
-	.offers{
-		.nav{
-			width:100%;
-			.offers-tab{
-				@include fontSize(12px);
-				color: $purple;
-			}
-		}
-	}
-	.slider-container{
-		position: relative;
-		margin-bottom:50px;
-		.owl-nav{
-			@include fontSize(40px);
-		    .owl-prev{
-				margin-left:0
-		    }
-		    .owl-next{
-				margin-right:0;
-		    }
-		}
-		.overflow-hide{
-			width:85%;
-			margin:auto;
-			.owl-carousel{
-				width:250px;
-				margin-left:auto;
-				margin-right:auto;
-				.owl-item{
-					&.shadow{
-						box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.4);
-					}
-					&.active{
-						box-shadow: 0 2px 50px 0 rgba(0, 0, 0, 0.4) !important;
-					}
-				}
-				.panel{
-					width: 100%;
-		  			height: 400px;
-					.panel-title{
-						padding:15px;
-						h1{
-							@include fontSize(20px);
-						}
-						h5{
-							@include fontSize(16px);
-							margin-bottom:40px;
-						}
-						.price{
-							@include fontSize(12px);
-						}
-						.go-offer{
-							width:40px;
-						}
-					}
-				}
-			}
-		}
-	}
-	.search-flight{
-		.section-title{
-			margin-bottom:25px;
-		}
-		.search-container{
-			.nav{
-				float:left;
-				width:100%;
-				margin-bottom:10px;
-				.flights-direction{
-					padding:0.5rem 1.5rem;
-					margin-right:10px;
-				}
-			}
-		}
-		.flight-fields{
-			margin-top:10px;
-		}
-	}
+
+}
+@include media-breakpoint-down(md) { 
 	.form-section{
 		margin-right:0px;
 		margin-bottom:10px;
 		flex:1;
 		&.double{
 			flex:1;
-		}
-	}
-	.input-date-picker-from{
-		&:first-child.r-b{
-			border-radius:5px 5px 0 0 ;
-			overflow: hidden;
-		}
-		&:last-child{
-			border-radius: 0 0 5px 5px;
-			overflow: hidden;
-		}
-		&.return-date{
-			margin-left:0px;
-			margin-top:1px;
-			.place-holder2{
-				i{
-					@include fontSize(20px);
-				}
-			}
-		}
-		&:before{
-			top:50%;
-			-webkit-transform: translateY(-50%);
-			   -moz-transform: translateY(-50%);
-			    -ms-transform: translateY(-50%);
-			     -o-transform: translateY(-50%);
-			        transform: translateY(-50%);
 		}
 	}
 	.search{
@@ -1270,102 +862,269 @@ body{
 			}
 		}
 	}
-	.fun-things-container{
-		.section-title{
-			margin-top: 40px;
-		}
-	}
-	.fun-things{
-		margin-top:-70px;
-		.ft-single{
-			padding:0;
-		}
-		.ft-single{
-			img{
-				max-width:100%;
-			}
-			&:first-child{
-				&:before{
-					display:block;
-				}
-			}
-			&:before{
-				display:none;
-			}
-			.fun-things-text{
-				padding:10px 30px;
-				.number{
-					@include fontSize(120px);
-					bottom: 40px;
-	    			left: 30px;
-				}
-				p{
-					@include fontSize(26px);
-				}
-			}
-		}
-	}
-	.hiw{
-		padding-top:50px;
-		.steps{
-			margin-top:20px;
-			margin-bottom:50px;
-			.step{
-				padding-right:20px;
-				.section-title{
-					color:$purple;
-					@include fontSize(20px);
-					padding: 10px 0px;
-					&:after{
-						width:30%;
-						height:3px;
-					}
-				}
-			}
-		}
-	}
-	.cards-container{
-		padding:50px 0;
-		.cards{
-			text-align: center;
-			margin-top:20px;
-			.credit-card{
-				width:50%;
-				img{
-					width: 100%;
-	    			margin-left: 0%;
-				}
-				p{
-					position: relative;
-					bottom:0;
-					left:0;
-					margin-bottom:0;
-				}
-			}
-		}
-	}
-	.terms{
-		.section-title{
-			margin-bottom:50px;
-		}
-		float:left;
-		width:100%;
-		padding:100px 0;
-		@include fontSize(15px);
-		line-height: 1.9;
-		letter-spacing: -0.5px;
-		color: #777777;
-		counter-reset: mycounter;
-		ol{position: relative;}
-		ol li { counter-increment: mycounter; margin-bottom: 10px;}
-	    ol li { counter-increment: mycounter; list-style-type: none; }
-	    ol li:before { content: counter(mycounter) ". ";     position: absolute;left: 0;}
-	}
-}
-@include media-breakpoint-down(md) { 
-
 }
 
 @include media-breakpoint-down(lg) { 
-
+	.container{
+		padding-right: 30px;
+    	padding-left: 30px;
+	}
+	.hero-block{
+	  	height: auto;
+	    padding-top: 90px;
+	    min-height: auto;
+	    padding-bottom: 60px;
+	  	h1{
+	  		@include fontSize(20px);
+	  	}
+	  	h5{
+		    margin-top: 8px;
+	  		@include fontSize(16px);
+	  	}
+	  	.book-trip{
+	  		@include fontSize(12px);
+	  		margin-top:10px;
+	  	}
+	  	.sub-logo{
+	  		position: relative;
+	  		bottom:0;
+	  		margin-top:20px;
+	  		width:50%;
+	  		img{
+	  			max-width: 100%;
+	  		}
+	  	}
+	}
+	.content{
+	  	#content-top{
+	  		margin-bottom:20px;
+	  	}
+	}
+	.section-title{
+		padding: 0 0 30px 0;
+		@include fontSize(18px);
+		letter-spacing: -0.5px;
+		&:after{
+			height:5px;
+			width:40%;
+		}
+	}
+	.offers{
+		.nav{
+			width:100%;
+			.offers-tab{
+				@include fontSize(12px);
+				color: $purple;
+			}
+		}
+	}
+	.slider-container{
+		position: relative;
+		margin-bottom:50px;
+		.owl-nav{
+			@include fontSize(40px);
+		    .owl-prev{
+				margin-left:0
+		    }
+		    .owl-next{
+				margin-right:0;
+		    }
+		}
+		.overflow-hide{
+			width:85%;
+			margin:auto;
+			.owl-carousel{
+				width:250px;
+				margin-left:auto;
+				margin-right:auto;
+				.owl-item{
+					&.shadow{
+						box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.4);
+					}
+					&.active{
+						box-shadow: 0 2px 50px 0 rgba(0, 0, 0, 0.4) !important;
+					}
+				}
+				.panel{
+					width: 100%;
+		  			height: 400px;
+					.panel-title{
+						padding:15px;
+						h1{
+							@include fontSize(20px);
+						}
+						h5{
+							@include fontSize(16px);
+							margin-bottom:40px;
+						}
+						.price{
+							@include fontSize(12px);
+						}
+						.go-offer{
+							width:40px;
+						}
+					}
+				}
+			}
+		}
+	}
+	.search-flight{
+		.section-title{
+			margin-bottom:25px;
+		}
+		.search-container{
+			.nav{
+				margin-bottom:10px;
+				.flights-direction{
+					padding:0.5rem 1.5rem;
+					margin-right:10px;
+				}
+			}
+		}
+		.flight-fields{
+			margin-top:10px;
+		}
+	}
+	// .form-section{
+	// 	margin-right:0px;
+	// 	margin-bottom:10px;
+	// 	flex:1;
+	// 	&.double{
+	// 		flex:1;
+	// 	}
+	// }
+	.input-date-picker-from{
+		&:first-child.r-b{
+			border-radius:5px 5px 0 0 ;
+			overflow: hidden;
+		}
+		&:last-child{
+			border-radius: 0 0 5px 5px;
+			overflow: hidden;
+		}
+		&.return-date{
+			margin-left:0px;
+			margin-top:1px;
+			.place-holder2{
+				i{
+					@include fontSize(20px);
+				}
+			}
+		}
+		&:before{
+			top:50%;
+			-webkit-transform: translateY(-50%);
+			   -moz-transform: translateY(-50%);
+			    -ms-transform: translateY(-50%);
+			     -o-transform: translateY(-50%);
+			        transform: translateY(-50%);
+		}
+	}
+	// .search{
+	// 	button{
+	// 		float:left;
+	// 		width:100%;
+	// 		margin-top:10px;
+	// 		padding:10px;
+	// 		i{
+	// 			display: inline-block;
+	// 			vertical-align: middle;
+	// 			zoom: 1;
+	// 			*display: inline;
+	// 			margin-bottom:0px;
+	// 			margin-right:10px;
+	// 		}
+	// 	}
+	// }
+	.fun-things-container{
+		.section-title{
+			margin-top: 40px;
+		}
+	}
+	.fun-things{
+		margin-top:-70px;
+		.ft-single{
+			padding:0;
+		}
+		.ft-single{
+			img{
+				max-width:100%;
+			}
+			&:first-child{
+				&:before{
+					display:block;
+				}
+			}
+			&:before{
+				display:none;
+			}
+			.fun-things-text{
+				padding:10px 30px;
+				.number{
+					@include fontSize(120px);
+					bottom: 40px;
+	    			left: 30px;
+				}
+				p{
+					@include fontSize(26px);
+				}
+			}
+		}
+	}
+	.hiw{
+		padding-top:50px;
+		.steps{
+			margin-top:20px;
+			margin-bottom:50px;
+			.step{
+				padding-right:20px;
+				.section-title{
+					color:$purple;
+					@include fontSize(20px);
+					padding: 10px 0px;
+					&:after{
+						width:30%;
+						height:3px;
+					}
+				}
+			}
+		}
+	}
+	.cards-container{
+		padding:50px 0;
+		.cards{
+			text-align: center;
+			margin-top:20px;
+			.credit-card{
+				width:50%;
+				img{
+					width: 100%;
+	    			margin-left: 0%;
+				}
+				p{
+					position: relative;
+					bottom:0;
+					left:0;
+					margin-bottom:0;
+				}
+			}
+		}
+	}
+	.terms{
+		.section-title{
+			margin-bottom:50px;
+		}
+		float:left;
+		width:100%;
+		padding:100px 0;
+		@include fontSize(15px);
+		line-height: 1.9;
+		letter-spacing: -0.5px;
+		color: #777777;
+		counter-reset: mycounter;
+		ol{position: relative;}
+		ol li { counter-increment: mycounter; margin-bottom: 10px;}
+	    ol li { counter-increment: mycounter; list-style-type: none; }
+	    ol li:before { content: counter(mycounter) ". ";     position: absolute;left: 0;}
+	}
 }

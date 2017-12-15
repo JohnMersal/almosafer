@@ -41,7 +41,7 @@ gulp.task('image', function () {
 gulp.task('default', ['image']);
 
 gulp.task('js', function() {
-    return gulp.src(['node_modules/owl.carousel/dist/owl.carousel.min.js', 'node_modules/bootstrap/dist/js/bootstrap.bundle.min.js', 'node_modules/jquery/dist/jquery.min.js', 'node_modules/tether/dist/js/tether.min.js', 'node_modules/html5shiv/dist/html5shiv.min.js', 'node_modules/scrollmagic/scrollmagic/minified/ScrollMagic.min.js'])
+    return gulp.src(['node_modules/@fengyuanchen/datepicker/dist/datepicker.min.js', 'node_modules/owl.carousel/dist/owl.carousel.min.js', 'node_modules/bootstrap/dist/js/bootstrap.bundle.min.js', 'node_modules/jquery/dist/jquery.min.js', 'node_modules/tether/dist/js/tether.min.js', 'node_modules/html5shiv/dist/html5shiv.min.js', 'node_modules/scrollmagic/scrollmagic/minified/ScrollMagic.min.js'])
         .pipe(gulp.dest("js/"))
         .pipe(browserSync.stream());
 });

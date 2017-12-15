@@ -65,7 +65,7 @@
 
 			-->
 			<!-- Hero Block - big image Start -->
-			<section class="hero-block row">
+			<section class="hero-block row"  data-type="background" data-speed="2">
 				<div class="container">
 					<div class="row">
 						<h1>
@@ -212,24 +212,23 @@
 						<div class="row">
 							<div class="col-md-12 search-container">
 								<form class="row">
-									<div class="col-md-12 d-xl-flex d-sm-flex flex-sm-column flex-xl-row flight-settings justify-content-start">
+									<div class="col-md-12 d-xl-flex d-sm-flex flex-sm-column flex-md-row flight-settings justify-content-start">
 										<div class="nav">
 											<a class="flights-direction active" id="oneway">One way</a>
 											<a class="flights-direction" id="return-direction">Return</a>
 										</div>
-										<div class="ml-auto align-self-center">
-											<label for="direct-flight" class="custom-control custom-checkbox">
-											<input id="direct-flight" type="checkbox" class="custom-control-input">
-											<span class="custom-control-indicator"></span>
-											<span class="custom-control-description">Direct flights only</span>
-											</label>
-										</div>
-										<div class="align-self-center">
-											<label for="refundable" class="custom-control custom-checkbox">
-											<input id="refundable" type="checkbox" class="custom-control-input">
-											<span class="custom-control-indicator"></span>
-											<span class="custom-control-description">Refundable</span>
-											</label>
+										<div class="ml-md-auto ml-lg-auto align-self-center">
+											
+												<label for="direct-flight" class="custom-control custom-checkbox">
+												<input id="direct-flight" type="checkbox" class="custom-control-input">
+												<span class="custom-control-indicator"></span>
+												<span class="custom-control-description">Direct flights only</span>
+												</label>
+												<label for="refundable" class="custom-control custom-checkbox">
+												<input id="refundable" type="checkbox" class="custom-control-input">
+												<span class="custom-control-indicator"></span>
+												<span class="custom-control-description">Refundable</span>
+												</label>
 										</div>
 									</div>
 									<div class="col-md-12">
@@ -394,6 +393,8 @@
 							<h2 class="section-title white">Emirates Isalmic Bank Featured Credit Cards</h2>
 						</div>
 						<div class="row cards">
+							<style>.credit-card{
+							display:none}</style>
 							<div class="col-lg col-md col-sm-6 credit-card">
 								<img src="images/cards/card-1@2x.png" srcset="images/cards/card-1@3x.png 2x" alt="">
 								<p>Skywards Infinite Credit Card</p>
@@ -473,7 +474,8 @@
 		<!-- Vendors -->
 		<script src="js/owl.carousel.min.js"></script>
 		<script src="js/ScrollMagic.min.js"></script>
-	    <script src="node_modules/@fengyuanchen/datepicker/dist/datepicker.min.js"></script>
+	    <script src="js/datepicker.min.js"></script>
+	    <script></script>
 		<!--
 
 		-->
