@@ -30,7 +30,7 @@ Please feel free to ask me any questions.
 * gulpfile.js
 
 
-#Gulp
+# Gulp
 
 I've used 
 Browsersync, Image optimization with 3 different methods, sass.
