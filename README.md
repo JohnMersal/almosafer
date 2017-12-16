@@ -14,7 +14,7 @@ Please feel free to ask me any questions.
 	* |----bootstrap.scss (Main framework css file)
 	* |----screen.scss / css (custom style for the design)
 	* |---- fonts
-	* |-------|----mosafer.eot/svg/ttf/woff (custom icon font made by Icomoon.io)
+		* |----mosafer.eot/svg/ttf/woff (custom icon font made by Icomoon.io)
 * images
 * images-source (source folder with unoptimized images)
 * js
