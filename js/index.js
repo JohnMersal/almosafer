@@ -84,28 +84,40 @@ $(document).ready(function() {
 	// End Owl Option to set SECOND slide in action
 	//////////////////////////////////////////////////////////
 	// Call back for prespective classes to give 3D Effect
+
+	function addPrespectiveToNext(element){
+		var prespective	= element != undefined ? element : $('.owl-item.active'); 
+		for (var i = 1; i <= 3; i++){
+			prespective.next('.owl-item').addClass('prespective' + i + (i != 3 ? ' shadow' : ''));
+			prespective = prespective.next();
+		}
+	}
+
+	function addPrespectiveToPrev(){
+		var prespective	= $('.owl-item.active'); 
+		for (var i = 1; i <= 2; i++){
+			prespective.prev('.owl-item').addClass('prespective' + i);
+			prespective = prespective.prev();
+		}
+	}
+
+	function addPrespective() {
+		addPrespectiveToPrev();
+		addPrespectiveToNext();
+	}
+
 	function callback(event) {
 		$('.owl-item.active').addClass('prespective1');
 		$('.owl-item.active').next('.owl-item').addClass('prespective1 shadow');
-		$('.owl-item.active').next().next('.owl-item').addClass('prespective1 shadow');
-		$('.owl-item.active').next().next().next('.owl-item').addClass('prespective2 shadow');
-		$('.owl-item.active').next().next().next().next('.owl-item').addClass('prespective3');
+		addPrespectiveToNext($('.owl-item.active').next());
 	}
 	function callback2(event) {
 		$('.owl-item').removeClass('prespective1 prespective2 prespective3 shadow')
-		$('.owl-item.active').prev().prev('.owl-item').addClass('prespective2');
-		$('.owl-item.active').prev('.owl-item').addClass('prespective1');
-		$('.owl-item.active').next('.owl-item').addClass('prespective1 shadow');
-		$('.owl-item.active').next().next('.owl-item').addClass('prespective2 shadow');
-		$('.owl-item.active').next().next().next('.owl-item').addClass('prespective3');
+		addPrespective();
 	}
 	$('html').on('click change', function(event) {
-		$('.owl-item').removeClass('prespective1 prespective2 prespective3 shadow')
-		$('.owl-item.active').prev().prev('.owl-item').addClass('prespective2');
-		$('.owl-item.active').prev('.owl-item').addClass('prespective1');
-		$('.owl-item.active').next('.owl-item').addClass('prespective1 shadow');
-		$('.owl-item.active').next().next('.owl-item').addClass('prespective2 shadow');
-		$('.owl-item.active').next().next().next('.owl-item').addClass('prespective3');
+		$('.owl-item').removeClass('prespective1 prespective2 prespective3 shadow');
+		addPrespective();
 	});
 	// END Call back for prespective classes to give 3D Effect
 	//////////////////////////////////////////////////////////
